@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: SFProDisplay-Heavy;
+  src: url(https://edvora-public.sgp1.cdn.digitaloceanspaces.com/sfpro/SF-Pro-Display-Heavy.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: SFProDisplay-Bold;
+  src: url(https://edvora-public.sgp1.cdn.digitaloceanspaces.com/sfpro/SF-Pro-Display-Bold.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: SFProDisplay-Medium;
+  src: url(https://edvora-public.sgp1.cdn.digitaloceanspaces.com/sfpro/SF-Pro-Display-Medium.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: SFProDisplay-Light;
+  src: url(https://edvora-public.sgp1.cdn.digitaloceanspaces.com/sfpro/SF-Pro-Display-Light.otf)
+    format("opentype");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.imageStyle{
+  object-fit: fill;
+}

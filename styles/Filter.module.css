@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.Container {
+  padding: 0 30px 20px 30px;
+  min-height:100vh;
+}
+.flexItem {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  width: 228px;
+  font-size: 16px;
+  background: #131313;
+  border-radius: 15px;
+  right: 0;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.dropdownOptions {
+  position: absolute;
+  z-index: 3;
+  height: 200px;
+  overflow: auto;
+  font-size: 16px;
+  background: #292929;
+  border-radius: 15px;
+  right: 0;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+min-width: 200px;
+font-size: 14px;
+}
+.dropdownOptions>div{
+  background: #232323;
+  word-wrap:normal;
+  padding:10px;
+  margin:2px;
+  border-radius:6px;
+}
+.dropdownOptions>div:hover{
+  background: #000;
+
+}
+.dropdownOptions::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.dropdownOptions::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.dropdownOptions::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:10px;
+}
+
+/* Handle on hover */
+.dropdownOptions::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.dropdown > div:first-child {
+  padding: 10px 0;
+  color: #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+.dropdown > div:nth-child(2),
+.dropdown > div:nth-child(3) {
+  padding: 10px;
+  background: #232323;
+  cursor: pointer;
+}
+.tabs {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  cursor: pointer;
+}
+.FilterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #d0cbcb;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+.FilterContainer > div:nth-child(2) {
+  color: #f2f2f2;
+  font-weight: 500;
+}
+.FilterContainer p {
+  position: relative;
+}
+
+.activeFilter {
+  color: #fff;
+  text-shadow: 0 0 0.01px #fff, 0 0 0.01px #fff;
+}
+/*
+
+.activeFilter {
+  font-weight: bold;
+  letter-spacing: 0 !important;
+} */
+
+.activeFilter::before {
+  content: "";
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 5px solid #fff;
+}
+@media screen and (max-width: 700px){
+  .FilterContainer{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tabs {
+    flex-direction: column;
+    gap:5px;
+  }
+  .dropdown {
+    z-index:2 ;
+    left: 0;
+  }
+  .tabs{
+    padding:0;
+    margin-bottom: 15px;
+  }
+  .flexItem{
+    margin-bottom:15px;
+  }
+}

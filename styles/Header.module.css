@@ -1,0 +1,31 @@
+.appbar {
+  background: #101010;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.appbar h1 {
+  font-family: "SFProDisplay-Bold";
+  color: #fff;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap:20px;
+  font-weight: bold;
+
+}
+.profileContainer img{
+    border-radius: 50%;
+}
+.profileImage{
+  object-fit:cover;
+}
