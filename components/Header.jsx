@@ -9,7 +9,7 @@ const Header = ({ profile }) => {
       {profile ? (
         <div className={styles.profileContainer}>
           <p>{profile.name}</p>
-          <div style={{ position: "relative", width: "50px", height: "50px" }}>
+          <div style={{ position: "relative", width: "45px", height: "45px" }}>
             <Image
               layout="fill"
               className={styles.profileImage}
